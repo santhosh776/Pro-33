@@ -16,11 +16,10 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
   createCanvas(800,400);
-  createSprite(400, 300, 50, 50);
   if(frameCount % 150 === 0){
     for(var i=0 ; i<maxSnow ; i++)
     {
-          snow.push(new createSnow(random(0,400),random(0,400)))
+          snow.push(new createSnow(random(0,800),random(0,800)))
     }
 }
 }
